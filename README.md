@@ -26,16 +26,15 @@
 ## Скріншоти
 
 ### Додавання завдання
-![Додавання завдання](./public\images\change_status.png)
-![Додавання завдання2](./images/add(2).1png)
+![Додавання завдання](https://github.com/VladyslavaVoznyuk/VueJSLabs2025/blob/05fcd2634ec5cea63fd9228e0e8c5fd637d34e56/vue-js/public/images/add1.png)
 ### Зміна статусу
-![Зміна](./images/change_status.png)
+![Зміна](https://github.com/VladyslavaVoznyuk/VueJSLabs2025/blob/05fcd2634ec5cea63fd9228e0e8c5fd637d34e56/vue-js/public/images/change_status.png)
 ### Видалення завдання
-![Видалення](./images/delete.png)
+![Видалення](https://github.com/VladyslavaVoznyuk/VueJSLabs2025/blob/05fcd2634ec5cea63fd9228e0e8c5fd637d34e56/vue-js/public/images/delete.png)
 ### Редагування завдання
-![Редагування](./images/edit.png)
+![Редагування](https://github.com/VladyslavaVoznyuk/VueJSLabs2025/blob/05fcd2634ec5cea63fd9228e0e8c5fd637d34e56/vue-js/public/images/edit.png)
 ### Фільтрація завдань
-![Фільтрація](./images/filters.png)
+![Фільтрація](https://github.com/VladyslavaVoznyuk/VueJSLabs2025/blob/05fcd2634ec5cea63fd9228e0e8c5fd637d34e56/vue-js/public/images/filters.png)
 
 
 ## Запуск проєкту
