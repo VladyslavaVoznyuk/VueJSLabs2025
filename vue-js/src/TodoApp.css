@@ -1,0 +1,83 @@
+.container {
+    max-width: 980px;
+    margin: 20px auto;
+    padding: 12px;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: #111827;
+}
+
+.title { font-size: 1.25rem; margin-bottom: 12px; }
+
+.card {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 2px rgba(16,24,40,0.02);
+}
+
+.add-form .form-row,
+.filters .filters-grid,
+.actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+
+.form-row input[type="text"],
+.form-row input[type="date"],
+.form-row textarea,
+.filters input,
+.filters select,
+.add-form input,
+.add-form select,
+.add-form textarea {
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 8px;
+    min-width: 160px;
+    font-size: 0.95rem;
+}
+
+.add-form textarea, .task-desc textarea { width: 100%; min-height: 60px; }
+
+.actions button,
+.btn-group button,
+.add-form button {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.actions button[disabled] { opacity: 0.6; cursor: not-allowed; }
+
+button.muted { background: transparent; color: #6b7280; border: 1px solid #e5e7eb; }
+button.danger { background: #ef4444; color: #fff; }
+
+.filters .filters-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 8px; }
+
+.list ul { list-style: none; padding: 0; margin: 0; }
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px;
+    border-bottom: 1px solid #f3f4f6;
+    align-items: flex-start;
+}
+.task-left { display: flex; gap: 12px; align-items: flex-start; }
+.task-main { display: flex; flex-direction: column; gap: 6px; }
+.task-title { font-weight: 600; display: flex; gap: 8px; align-items: baseline; }
+.task-title .meta { font-weight: 400; color: #6b7280; font-size: 0.85rem; }
+.task-desc { color: #374151; font-size: 0.95rem; }
+.task-right { display: flex; align-items: center; gap: 8px; }
+.btn-group button { background: #f3f4f6; padding: 6px 8px; border-radius: 6px; }
+
+.task-title .done,
+.task-title.done,
+.task-title .done { text-decoration: line-through; color: #9ca3af; }
+
+.pagination { display: flex; gap: 6px; margin-top: 12px; }
+.pagination button { padding: 6px 8px; border-radius: 6px; border: 1px solid #e5e7eb; background: white; cursor: pointer; }
+.pagination button.active { background: #111827; color: white; border-color: #111827; }
+
+.error { color: #dc2626; margin-top: 6px; }
+.muted { color: #6b7280; }
