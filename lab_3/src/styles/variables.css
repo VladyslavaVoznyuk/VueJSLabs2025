@@ -1,0 +1,18 @@
+:root {
+    --bg: #ffffff;
+    --text: #111111;
+    --accent: #4f46e5;
+    --muted: #666666;
+}
+
+
+.theme-dark {
+    --bg: #0b0b0e;
+    --text: #f3f4f6;
+    --accent: #8b5cf6;
+    --muted: #a1a1aa;
+}
+
+
+html, body, #app { height: 100%; }
+body { background: var(--bg); color: var(--text); font-family: system-ui, Arial, sans-serif; }

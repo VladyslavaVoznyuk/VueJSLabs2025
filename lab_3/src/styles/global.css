@@ -1,0 +1,27 @@
+main {
+    padding: 24px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+header, footer {
+    padding: 12px 24px;
+}
+img {
+    width: 500px;
+    display: block;
+}
+button {
+    cursor: pointer;
+}
+
+:root {
+    --bg-color: #f9f9f9;
+    --text-color: #222;
+    --accent-color: #42b983;
+}
+
+[data-theme='dark'] {
+    --bg-color: #1e1e1e;
+    --text-color: #f3f3f3;
+    --accent-color: #90ee90;
+}
