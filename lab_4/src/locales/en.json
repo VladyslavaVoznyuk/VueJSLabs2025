@@ -1,0 +1,50 @@
+{
+  "titles": {
+    "appName": "Profile & Cart",
+    "profile": "Profile",
+    "products": "Products",
+    "cart": "Cart"
+  },
+  "menu": {
+    "profile": "Profile",
+    "products": "Products",
+    "cart": "Cart"
+  },
+  "buttons": {
+    "add": "Add",
+    "remove": "Remove",
+    "clear": "Clear"
+  },
+  "cart": {
+    "title": "Your Cart",
+    "total": "Total",
+    "items": "items",
+    "empty": "Cart is empty"
+  },
+  "products": {
+    "title": "Products",
+    "chocolateCake": "Chocolate Cake",
+    "vanillaCupcake": "Vanilla Cupcake",
+    "strawberryTart": "Strawberry Tart"
+  },
+  "profile": {
+    "name": "Name",
+    "email": "Email",
+    "dateOfBirth": "Date of birth",
+    "address": "Address",
+    "phones": "Phones",
+    "phone": "Phone",
+    "addPhone": "Add phone",
+    "save": "Save",
+    "reset": "Reset",
+    "emulateServerError": "Emulate server error"
+  },
+  "validation": {
+    "required": "{field} is required",
+    "email": "{field} must be a valid email address",
+    "dateInvalid": "{field} must be a valid date (YYYY-MM-DD)"
+  },
+  "errors": {
+    "emailTaken": "This email is already taken"
+  }
+}
