@@ -1,0 +1,51 @@
+{
+  "titles": {
+    "appName": "Профіль і Кошик",
+    "profile": "Профіль",
+    "products": "Продукти",
+    "cart": "Кошик"
+  },
+  "menu": {
+    "profile": "Профіль",
+    "products": "Продукти",
+    "cart": "Кошик"
+  },
+  "buttons": {
+    "add": "Додати",
+    "remove": "Видалити",
+    "clear": "Очистити"
+  },
+  "cart": {
+    "title": "Ваш кошик",
+    "total": "Всього",
+    "items": "товари(в)",
+    "empty": "Кошик порожній"
+  },
+  "products": {
+    "title": "Продукти",
+    "chocolateCake": "Шоколадний торт",
+    "vanillaCupcake": "Ванільний кекс",
+    "strawberryTart": "Полуничний тарт"
+  },
+  "profile": {
+    "name": "Ім'я",
+    "email": "Електронна пошта",
+    "dateOfBirth": "Дата народження",
+    "address": "Адреса",
+    "phones": "Телефони",
+    "phone": "Телефон",
+    "addPhone": "Додати телефон",
+    "save": "Зберегти",
+    "reset": "Скинути",
+    "emulateServerError": "Емітувати помилку сервера"
+  },
+  "validation": {
+    "required": "Поле {field} є обов'язковим",
+    "email": "{field} має бути дійсною електронною адресою",
+    "dateInvalid": "Поле {field} має бути коректною датою (формат рррр-мм-дд)"
+
+  },
+  "errors": {
+    "emailTaken": "Цей email вже використовується"
+  }
+}
