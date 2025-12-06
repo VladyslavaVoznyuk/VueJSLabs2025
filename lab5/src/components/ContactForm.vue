@@ -31,7 +31,6 @@ const validate = () => {
 const onSubmit = () => {
   if (!validate()) return
 
-  // Приклад логіки відправки даних на сервер тут
 
   toast.add({
     severity: 'success',
@@ -40,7 +39,6 @@ const onSubmit = () => {
     life: 3000
   })
 
-  // Очищення форми
   form.name = ''
   form.email = ''
   form.phone = ''
@@ -126,36 +124,55 @@ const onSubmit = () => {
 .contact-form {
   max-width: 500px;
   margin: 0 auto;
+  text-align: left;
 }
 
-/* ВИПРАВЛЕННЯ СТИЛІВ ДЛЯ ТЕМНОГО ТЛА
-  Використовуємо :deep() для стилізації елементів PrimeVue всередині scoped-стилів
-*/
-
-/* Робимо фон Card світлішим або контрастнішим, щоб він не зливався з тлом сторінки */
-:deep(.p-card) {
-  background-color: var(--p-card-background, #2a2a2a); /* Використовуємо змінну, якщо вона є, або задаємо вручну */
-  color: var(--p-card-color, #ffffff); /* Забезпечуємо білий текст */
-  border: 1px solid var(--p-card-border-color, #444);
+.contact-form h2 {
+  text-align: left;
+  margin-bottom: 24px;
+  font-size: 1.8rem;
+  color: #1f2937;
 }
 
-/* Забезпечуємо контраст для полів вводу */
-:deep(.p-inputtext),
-:deep(.p-inputmask),
-:deep(.p-textarea) {
-  color: #fff; /* Білий текст у полі */
-  background-color: var(--p-inputtext-background, #333); /* Темніший, але контрастний фон для поля */
-  border-color: var(--p-inputtext-border-color, #555);
+.contact-form .p-card {
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.08);
 }
 
-/* Забезпечуємо контраст для плейсхолдерів (може потребувати додаткових стилів залежно від браузера) */
-:deep(input::placeholder),
-:deep(textarea::placeholder) {
-  color: #aaa;
+.contact-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #374151;
 }
 
-:deep(.p-card-content) {
+.contact-form .p-inputtext,
+.contact-form .p-inputmask,
+.contact-form .p-inputtextarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  padding: 10px 14px;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
 
-  min-height: 100px;
+.contact-form .p-inputtext:focus,
+.contact-form .p-inputmask:focus,
+.contact-form .p-inputtextarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.2);
+}
+
+.contact-form .p-button {
+  background-color: #6366f1;
+  border-radius: 12px;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.contact-form .p-button:hover {
+  background-color: #4f46e5;
 }
 </style>

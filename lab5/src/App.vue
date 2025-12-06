@@ -10,6 +10,8 @@ import ReviewsSection from './components/ReviewsSection.vue'
 import FAQSection from './components/FAQSection.vue'
 import ContactForm from './components/ContactForm.vue'
 import SiteFooter from './components/SiteFooter.vue'
+
+
 </script>
 
 <template>
@@ -38,6 +40,7 @@ import SiteFooter from './components/SiteFooter.vue'
     </section>
     <SiteFooter />
   </div>
+
 </template>
 
 

@@ -16,6 +16,7 @@ import Button from 'primevue/button'
 import Toast from 'primevue/toast'
 
 import 'primeicons/primeicons.css'
+import CopyToClipboardPlugin from './plugins/CopyToClipboard'
 
 const app = createApp(App)
 
@@ -31,3 +32,4 @@ app.component('Button', Button)
 app.component('Toast', Toast)
 
 app.mount('#app')
+app.use(CopyToClipboardPlugin)

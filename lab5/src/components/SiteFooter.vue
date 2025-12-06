@@ -1,15 +1,42 @@
 <script setup>
 import Button from 'primevue/button'
 import { useToast } from 'primevue/usetoast'
+import { getCurrentInstance } from 'vue' 
 
 const toast = useToast()
 
+const { proxy } = getCurrentInstance()
+
 function copy() {
-  $copyToClipboard('support@saas.com').then((ok) => {
-    if (ok) {
-      toast.add({ severity: 'success', summary: 'Email скопійовано!' })
-    }
-  })
+  const emailToCopy = 'support@saas.com'
+
+  proxy.$copyToClipboard(emailToCopy)
+    .then((ok) => {
+      if (ok) {
+        toast.add({
+          severity: 'success',
+          summary: 'Успіх',
+          detail: 'Email скопійовано в буфер обміну!',
+          life: 3000
+        })
+      } else {
+        toast.add({
+          severity: 'error',
+          summary: 'Помилка',
+          detail: 'Неможливо скопіювати.',
+          life: 3000
+        })
+      }
+    })
+
+    .catch(() => {
+      toast.add({
+        severity: 'error',
+        summary: 'Помилка',
+        detail: 'Функція копіювання недоступна.',
+        life: 3000
+      })
+    })
 }
 </script>
 
